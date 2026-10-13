@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teju Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">Teju</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <ul class="nav__menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="container hero__content">
+      <h1 class="hero__title">Teju</h1>
+      <p class="hero__subtitle">Full‑Stack Developer & Designer</p>
+      <a href="#contact" class="btn btn--accent">Get in Touch</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section__title">About Me</h2>
+      <p class="about__text">Passionate developer with a love for creating clean, performant web experiences. I enjoy turning ideas into reality using modern web technologies.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills__list">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Tailwind</span>
+        <span class="chip">React</span>
+        <span class="chip">Node.js</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <article class="card">
+          <h3 class="card__title">Project One</h3>
+          <p class="card__desc">A responsive web app built with React and Tailwind.</p>
+          <div class="card__tags">
+            <span class="chip">React</span>
+            <span class="chip">Tailwind</span>
+          </div>
+          <a href="#" class="card__link">View Demo</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Project Two</h3>
+          <p class="card__desc">Node.js API serving a mobile client.</p>
+          <div class="card__tags">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+          </div>
+          <a href="#" class="card__link">View Repo</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Project Three</h3>
+          <p class="card__desc">Static portfolio site using vanilla HTML/CSS.</p>
+          <div class="card__tags">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+          </div>
+          <a href="#" class="card__link">Live Site</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__email">Email: <a href="mailto:teju@example.com">teju@example.com</a></p>
+      <form id="contact-form" class="contact__form" novalidate>
+        <label class="form__group">
+          <span class="form__label">Name</span>
+          <input type="text" name="name" required class="form__input" />
+        </label>
+        <label class="form__group">
+          <span class="form__label">Email</span>
+          <input type="email" name="email" required class="form__input" />
+        </label>
+        <label class="form__group">
+          <span class="form__label">Message</span>
+          <textarea name="message" rows="4" required class="form__input"></textarea>
+        </label>
+        <button type="submit" class="btn btn--accent">Send</button>
+        <p id="form-status" class="form__status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 Teju. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
